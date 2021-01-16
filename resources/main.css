@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    background-image: url(../assets/background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.left.title {
+    position: absolute;
+	top: 0;
+    left: 0;
+    width: 500px;
+    padding: 70px;
+}
+
+.left.dots {
+	position: absolute;
+    bottom: 0;
+    height: 300px;
+    padding: 70px;
+	left: 0;
+}
+
+.right.dots {
+	position: absolute;
+	top: 0;
+    right: 0;
+    height: 300px;
+    text-align: end;
+    padding: 70px;
+}
+
+.right.title {
+	bottom: 0%;
+	right: 0%;
+    position: absolute;
+    width: 450px;
+    padding: 70px;
+}
+
+ .title img{
+    width: 100%;
+    height: auto;
+}
+
+.dots img{
+    width: auto;
+    height: 100%;
+}
+
+.middle-container{
+    position: absolute;
+    width: 560px;
+    height: 260px;
+    border: 7px solid white;
+    box-shadow: inset 8px 15px 13px 1px rgba(44,44,44,0.25), 8px 15px 13px 1px rgba(44,44,44,0.25);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.margin.left {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 120px;
+    padding: 15px;
+}
+
+.margin.right {
+	top: 0;
+    right: 0;
+    position: absolute;
+    height: 120px;
+    padding: 15px;
+}
+
+.margin img{
+    width: auto;
+    height: 100%;
+}
+
+.title-container{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.title-container img{
+    width: 100%;
+    height: auto;
+}
+
+.underline{
+    border-bottom: solid 2px white;
+    width: 160px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.description{
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-family:'Open Sans', Georgia, Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    padding-top: 25px;
+    width: 390px;
+    text-align: center;
+    width: 400px;
+    text-align: center;
+    top: 50%;
+    left: 15%;
+    opacity: 0.8;
+}
