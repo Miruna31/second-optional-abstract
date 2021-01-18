@@ -25,6 +25,7 @@ body, html {
     padding: 70px;
 }
 
+/* .dots au mult cod duplicat, puteai sa aplici tot ce e duplicat pe .dots si sa lasi ce e specific pe .left si pe .right */
 .left.dots {
 	position: absolute;
     bottom: 0;
@@ -60,6 +61,7 @@ body, html {
     height: 100%;
 }
 
+/* acesta puteai sa il aliniezi cu flex in centrul paginii ca si alternativa */
 .middle-container{
     position: absolute;
     width: 560px;
@@ -114,6 +116,7 @@ body, html {
 }
 
 .description{
+    /* si aici se punea problema doar de continut centrat, as fi vrut sa vad si alte tehnici decat cele de pozitionare, care doar intr-un numar limitat de cazuri este ok sa le folosim */
     position: absolute;
     text-transform: uppercase;
     color: white;
