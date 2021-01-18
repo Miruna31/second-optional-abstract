@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .wrapper{
@@ -17,38 +16,38 @@ body, html {
     position: relative;
 }
 
-.left.title {
+.title{
     position: absolute;
+    padding: 70px;
+}
+
+.left.title {
 	top: 0;
     left: 0;
     width: 500px;
-    padding: 70px;
-}
-
-/* .dots au mult cod duplicat, puteai sa aplici tot ce e duplicat pe .dots si sa lasi ce e specific pe .left si pe .right */
-.left.dots {
-	position: absolute;
-    bottom: 0;
-    height: 300px;
-    padding: 70px;
-	left: 0;
-}
-
-.right.dots {
-	position: absolute;
-	top: 0;
-    right: 0;
-    height: 300px;
-    text-align: end;
-    padding: 70px;
 }
 
 .right.title {
 	bottom: 0%;
 	right: 0%;
-    position: absolute;
     width: 450px;
+}
+
+.dots{
+    position: absolute;
+    height: 300px;
     padding: 70px;
+}
+
+.left.dots {
+    bottom: 0;
+	left: 0;
+}
+
+.right.dots {
+	top: 0;
+    right: 0;
+    text-align: end;
 }
 
  .title img{
@@ -61,32 +60,35 @@ body, html {
     height: 100%;
 }
 
-/* acesta puteai sa il aliniezi cu flex in centrul paginii ca si alternativa */
+.middle-wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .middle-container{
-    position: absolute;
     width: 560px;
     height: 260px;
     border: 7px solid white;
     box-shadow: inset 8px 15px 13px 1px rgba(44,44,44,0.25), 8px 15px 13px 1px rgba(44,44,44,0.25);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    position: relative;
+}
+
+.margin{
+    position: absolute;
+    height: 120px;
+    padding: 15px;
 }
 
 .margin.left {
-	position: absolute;
     bottom: 0;
     left: 0;
-    height: 120px;
-    padding: 15px;
 }
 
 .margin.right {
 	top: 0;
     right: 0;
-    position: absolute;
-    height: 120px;
-    padding: 15px;
 }
 
 .margin img{
@@ -94,13 +96,15 @@ body, html {
     height: 100%;
 }
 
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
 .title-container{
-    position: absolute;
     width: 300px;
-    height: 100px;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%)
 }
 
 .title-container img{
@@ -112,23 +116,16 @@ body, html {
     border-bottom: solid 2px white;
     width: 160px;
     padding-top: 25px;
-    margin: 0 auto;
 }
 
 .description{
-    /* si aici se punea problema doar de continut centrat, as fi vrut sa vad si alte tehnici decat cele de pozitionare, care doar intr-un numar limitat de cazuri este ok sa le folosim */
-    position: absolute;
     text-transform: uppercase;
     color: white;
     font-family:'Open Sans', Georgia, Arial, sans-serif;
     font-size: 8px;
     font-weight: bold;
     padding-top: 25px;
-    width: 390px;
     text-align: center;
     width: 400px;
-    text-align: center;
-    top: 50%;
-    left: 15%;
-    opacity: 0.8;
+    opacity: 0.9;
 }
